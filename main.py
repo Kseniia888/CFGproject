@@ -2,7 +2,7 @@
 import requests
 
 
-ingredient = input('What ingredient should be in recipes? ')
+
 
 def recipe_search(ingredient):
 # Register to get an APP ID and key https://developer.edamam.com/
@@ -17,6 +17,7 @@ def recipe_search(ingredient):
 
 
 def run():
+    ingredient = input('What ingredient should be in recipes? ')
     results = recipe_search(ingredient)
 
     for result in results:
