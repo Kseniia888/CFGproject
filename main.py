@@ -57,5 +57,13 @@ def create_and_write_json_file(data, filename):
 data_from_data = recipe_search(ingredient)
 create_and_write_json_file(data_from_data, 'data.json')
 
-data_from_data = sorted(data_from_data, key=lambda x: x['recipe']['totalWeight'], reverse=True)
+
+def sorting_by_func(data, filename):
+    data_from_data = recipe_search(ingredient)
+
+    with open(filename, 'w') as file:
+        json.dump(data, file)
+
+data_from_data1 = sorted(data_from_data, key=lambda x: x['recipe']['totalWeight'], reverse=True)
+sorting_by_func(data_from_data1, 'sortedData.json')
 pprint.pprint(data_from_data)
