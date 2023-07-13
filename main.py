@@ -2,6 +2,10 @@
 import pprint
 import requests
 import json
+import sys
+
+sys.stdin.reconfigure(encoding='utf-8')
+sys.stdout.reconfigure(encoding='utf-8')
 
 ingredient = input('What ingredient should be in recipes? ')
 
