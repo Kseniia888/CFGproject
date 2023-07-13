@@ -1,3 +1,4 @@
+
 import pprint
 import requests
 import json
@@ -13,6 +14,22 @@ def recipe_search(ingredient):
     )
     data = result.json()
     return data['hits']
+
+#First extention 
+
+def save_result ():
+    with open('saved_res.txt', 'w') as file:
+        results = recipe_search(ingredient)
+        for result in results:
+            recipe = result['recipe']
+            file.write(recipe['label'] + "\n")
+            file.write(recipe['shareAs'] + "\n")
+            file.write("\n")
+
+save_result()
+print("Data saved to 'saved_res.txt' file.")
+
+#second extention
 
 def run():
     results = recipe_search(ingredient)
