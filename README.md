@@ -1,4 +1,4 @@
-# CFGproject Group 4 
+# CFGproject Group 
 # Recipe Search Program with usage Edamam Recipes API
 
 Recipe Search Program
