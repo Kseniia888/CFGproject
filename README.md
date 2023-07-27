@@ -1,4 +1,5 @@
-# CFGproject Group 4 Option 2 Edamam Recipes with APIs Ksenia, Gina, Abu (Python Course)
+# CFGproject Group 4 
+# Recipe Search Program with usage Edamam Recipes API
 
 Recipe Search Program
 Welcome to the Recipe Search program! This application allows you to search for recipes based on a specific ingredient. The program uses the Edamam Recipe API to fetch recipe data. Before you begin, please make sure you have read the Edamam API documentation here.
